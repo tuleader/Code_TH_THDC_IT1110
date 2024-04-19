@@ -1,9 +1,7 @@
 #include <stdio.h>
-// #include <conio.h>
 int main()
 {
     int a, b, c,tong;
-    // float tong;
     scanf("%d", &a);
     scanf("%d", &b);
     scanf("%d", &c);
