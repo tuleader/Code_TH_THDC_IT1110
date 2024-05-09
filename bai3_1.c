@@ -1,7 +1,7 @@
-#include<stdio.h>
+#include <stdio.h>
 int main()
 {
-    double a, b, c,tong;
+    double a, b, c, tong;
     scanf("%lf", &a);
     scanf("%lf", &b);
     scanf("%lf", &c);

@@ -1,5 +1,6 @@
-#include<stdio.h>
-int main(){
+#include <stdio.h>
+int main()
+{
     float a, b, tong;
     scanf("%f%f", &a, &b);
     tong = a + b;

@@ -1,9 +1,11 @@
-#include<stdio.h>
+#include <stdio.h>
 #define PI 3.14159
-int main(){
+int main()
+{
     double r, chuvi, dientich;
     scanf("%lf", &r);
-    if(r <= 0){
+    if (r <= 0)
+    {
         printf("ERROR");
         return 0;
     }
