@@ -6,7 +6,7 @@ int main()
     if (n < 0 || n > 8)
     {
         printf("ERROR");
-        return;
+        return 0;
     }
     for (int i = 1; i <= n; i++)
     {

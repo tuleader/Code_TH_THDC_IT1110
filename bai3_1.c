@@ -8,4 +8,5 @@ int main()
     tong = a + b + c;
     printf("%lf\n", tong);
     printf("%lf", tong / 3.0);
+    return 0;
 }

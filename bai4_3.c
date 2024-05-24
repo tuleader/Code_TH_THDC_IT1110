@@ -6,7 +6,7 @@ int main()
     if (n <= 0 || n >= 1000)
     {
         printf("ERROR");
-        return;
+        return 0;
     }
     tram = n / 100;
     chuc = (n - tram * 100) / 10;

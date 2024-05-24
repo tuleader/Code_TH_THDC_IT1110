@@ -17,7 +17,7 @@ int main()
     if (a <= 0 || b <= 0)
     {
         printf("ERROR");
-        return;
+        return 0;
     }
     ucln = timUCLN(a, b);
     bcnn = a * b / ucln;

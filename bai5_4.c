@@ -8,7 +8,7 @@ int main()
     if (n < 2 || n > 10)
     {
         printf("0");
-        return;
+        return 0;
     }
 
     int arr[10];

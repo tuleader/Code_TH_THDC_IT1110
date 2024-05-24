@@ -7,7 +7,7 @@ int main()
     if (n < 1 || x < 0)
     {
         printf("Error");
-        return;
+        return 0;
     }
     for (int i = 1; i <= n; i++)
     {

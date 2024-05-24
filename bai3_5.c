@@ -6,4 +6,5 @@ int main()
     scanf("%lf%lf%lf", &x, &y, &z);
     F = ((x + y + z) / (x * x + y * y + 1)) - fabs(x - z * cos(y));
     printf("%lf", F);
+    return 0;
 }

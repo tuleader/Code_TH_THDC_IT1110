@@ -7,4 +7,5 @@ int main()
     scanf("%lf", &thueGTGT);
     thanhTien = giaBan * canNang * (1 + thueGTGT / 100);
     printf("%lf", thanhTien);
+    return 0;
 }
