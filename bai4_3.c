@@ -1,17 +1,17 @@
 #include <stdio.h>
 int main()
 {
-    int n, tram, chuc, donVi, tong;
+    int n, x=0;
     scanf("%d", &n);
     if (n <= 0 || n >= 1000)
     {
         printf("ERROR");
         return 0;
     }
-    tram = n / 100;
-    chuc = (n - tram * 100) / 10;
-    donVi = (n - tram * 100 - chuc * 10);
-    tong = tram + chuc + donVi;
-    printf("%d", tong);
+    while(n){
+        x += n%10;
+        n /= 10;
+    }
+    printf("%d", x);
     return 0;
 }

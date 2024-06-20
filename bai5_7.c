@@ -1,44 +1,33 @@
-#include <stdio.h>
-#include <string.h>
-
-void normalizeTitle(char *title) {
-    int i, j;
-    int length = strlen(title);
-
-    // Remove leading spaces
-    while (title[0] == ' ') {
-        for (i = 0; i < length; i++) {
-            title[i] = title[i + 1];
-        }
-        length--;
-    }
-
-    // Remove trailing spaces
-    while (title[length - 1] == ' ') {
-        title[length - 1] = '\0';
-        length--;
-    }
-
-    // Remove extra spaces between words
-    for (i = 0; i < length; i++) {
-        if (title[i] == ' ' && title[i + 1] == ' ') {
-            for (j = i; j < length; j++) {
-                title[j] = title[j + 1];
-            }
-            length--;
-            i--;
-        }
-    }
-}
-
-int main() {
-    char title[100];
-
-    fgets(title, sizeof(title), stdin);
-
-    normalizeTitle(title);
-
-    printf("%s\n", title);
-
+#include<stdio.h>
+#include<string.h>
+#define MAXLEN 100000
+int main(){
+    char strS[MAXLEN];
+    char strT[MAXLEN];
+    fgets(strS, MAXLEN, stdin);
+    int i = 0; 
+    int index = 0;
+    for(i = 0; i < strlen(strS); i++)
+    {
+    	if(strS[i] != ' ')
+    	{
+    		strT[index] = strS[i];
+			index++;	
+		}
+		else
+		{
+			if(i > 0 && strS[i - 1] != ' ')
+			{
+				strT[index] = strS[i];
+				index++;
+			}
+		}
+	}
+	if(strT[strlen(strT) - 1] == ' ')
+	{
+		strT[strlen(strT) - 1] = 0;
+	}
+	printf("%s", strT);
+    
     return 0;
 }

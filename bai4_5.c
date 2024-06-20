@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <math.h>
-#include <complex.h>
 
 void solveQuadraticEquation(double a, double b, double c)
 {
@@ -39,10 +38,8 @@ void solveQuadraticEquation(double a, double b, double c)
         }
         else
         {
-            double complex x1 = (-b + csqrt(delta)) / (2 * a);
-            double complex x2 = (-b - csqrt(delta)) / (2 * a);
-            printf("%lf+%lfi\n", creal(x1), cimag(x1));
-            printf("%lf%lfi", creal(x2), cimag(x2));
+            printf("%lf+%lfi", -b / (2 * a), sqrt(fabs(delta)) / (2 * a));
+            printf("\n%lf-%lfi", -b / (2 * a), sqrt(fabs(delta)) / (2 * a));
         }
     }
 }
